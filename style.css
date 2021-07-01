@@ -1,4 +1,4 @@
-body { background-color: #f2f2f2;
+body { background-color: #FFFFFF;
 }body {
     font-family: 'Nunito', sans-serif;
   }
@@ -8,8 +8,22 @@ body { background-color: #f2f2f2;
       width: 100px;
       
   }
-  /* Grid CSS */
+
+  .flexcontainer{
+    display:flex;
+    height: 700px;
+    width: 100%;
+    position: centered;
+  }
   
+  .caseStudies{
+    display:flex;
+    height: 300px;
+    width: 50%;
+  }
+  /* Grid CSS */
+
+
   #heroGrid {
     margin: 0px 5%;
     display: grid;
@@ -34,6 +48,7 @@ body { background-color: #f2f2f2;
     z-index: 100;
   }
   
+
   .heroGridArea {
     background-position: center;
     background-repeat: no-repeat;
@@ -48,22 +63,44 @@ body { background-color: #f2f2f2;
   .subHeading {
     text-align: center;
     border-bottom: 5px solid #2F1D73;
-    border-bottom: 2px #;
-    width: 300px;
+    width: 200px;
     margin: 50px auto;
   }
   
+
   #categoryGrid {
     margin: 0px 5%;
-    display: grid;
+    /* display: grid;
     grid-template-rows: 300px 300px 300px;
-    grid-template-columns: 2fr 2fr 2fr;
-    grid-template-areas: "skills tools contact"
-    "EGC haveHold"
-    ;
+    grid-template-columns: 2fr 2fr 2fr; */
+    /* grid-template-areas: "skills tools contact"
+    "EGC haveHold" */
   }
+
     
   .categoryGridArea {
+    /* background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 5px;
+    cursor: pointer; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* flex-start : align; */
+    /* align-items: flex-start;
+    align-content: end;
+    width: 50%;
+    padding: 25px;
+    border: 2px solid #6E49BF;
+    border-radius: 8px;
+    box-shadow: 12px 12px 2px 1px rgba(139, 139, 139, 0.2);
+ 
+     */
+    } 
+  
+
+  .categoryGridTwo {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -72,7 +109,8 @@ body { background-color: #f2f2f2;
     display: grid;
     align-content: end;
   }
-  
+
+
   .heading {
     background-color: #2F1D73(0,0,0,0.7);
     padding: 15px;
@@ -81,8 +119,37 @@ body { background-color: #f2f2f2;
     font-size: 18px;
     border-bottom: 5px solid #2F1D73;
   }
+
+
+  .caseStudies {
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+
+
+  .case-study-heading {
+    border-bottom: 3px solid #2F1D73;
+    width: 60%;
+    padding: 0 0 15px;
+  }
+
+
+  .desktop_csa {
+    width: 500px;
+  }
   
+
+  .mobile_hh {
+    width: 200px;
+    padding-left: 15%;
+    padding-right: 15%;
+  }
   
+
   /* Navigation CSS */
   /* CHECK OUT THIS CODE BELOW IF YOU WANT TO GET A REFRESHER ON FLEX */
   
@@ -91,20 +158,28 @@ body { background-color: #f2f2f2;
     flex-direction: row;
     margin: 0px 5%;
   }
+
+
   #navBar h1 {
     width: 25%;
     font-weight: 500;
   }
+
+
   #navigation {
     display: flex;
     width: 50%;
     align-items: right;
     justify-content: space-evenly;
   }
+
+
   #navigation p {
     cursor: pointer;
     text-decoration: none;
   }
+
+
 
   .footer-links {
     display: flex;
@@ -112,17 +187,33 @@ body { background-color: #f2f2f2;
     align-items: left;
     justify-content: space-evenly;
   }
+  
+  .hhImageContainer{
+    display: flex;
+    justify-content:space-evenly;
+  }
 
 
-  .icons {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+    grid-gap: 1rem;
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    padding-bottom: 100%;
   }
+  
+
+  .iconsName {
+    margin: 15px;
+    cursor: pointer;
+  }
+
+
   .icons img {
     margin: 15px;
     cursor: pointer;
-    width: 30px;
   }
   .highlight {
     color: #2F1D73;
@@ -130,6 +221,18 @@ body { background-color: #f2f2f2;
   }
   
   /* Typography CSS */
+
+  <style>
+        <html> {
+          font-size: 60px;
+        }
+    
+        @media screen and (max-width:600px){
+          body{
+            color:#F2D338;
+          }
+        }
+  </style>
   
   h2 {
     font-size: 60px;
@@ -141,6 +244,7 @@ body { background-color: #f2f2f2;
     font-size: 32px;
     font-weight: 300;
     margin: 0px 0px;
+    color: #2F1D73;
   }
   
   h4 {
@@ -158,3 +262,31 @@ body { background-color: #f2f2f2;
     color: #636364;
   }
   
+  #categoryGrid {
+    color: #636364; 
+  }
+
+  #navigationBar {
+    color: #2F1D73; 
+  }
+
+  .buttonReadOne{
+    color:#FFFFFF;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding: 10px;
+    border-color:#2F1D73;
+    background-color: #2F1D73;
+    border-radius: 15px;
+  }
+
+  #footer{
+    color: #2F1D73;
+    padding:40px;
+  }
+
+  @media script and (width: 300px) {
+    body {
+        color: red;
+    }
+}
